@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="本篇简要学习Anko中对自定义View的扩展，以FaceBook的图片加载框架fresco中的SimpleDraweeView为例。 必要条件支持kotlin及kotlin扩展引入anko及anko扩展（个人建议引入github上面anko项目下所有库）开始创建一个名为views.kt的文件写入以下代码123inline fun ViewManager.simpleDraweeView(theme">
+<meta name="description" content="categories: Androidtags: Anko本篇简要学习Anko中对自定义View的扩展，以FaceBook的图片加载框架fresco中的SimpleDraweeView为例。 必要条件支持kotlin及kotlin扩展引入anko及anko扩展（个人建议引入github上面anko项目下所有库）开始创建一个名为views.kt的文件写入以下代码123inline fun ViewM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Anko的使用（一）">
-<meta property="og:url" content="http://yoursite.com/2018/01/21/hello-world/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/01/22/hello-world/index.html">
 <meta property="og:site_name" content="kumiの奇妙冒险">
-<meta property="og:description" content="本篇简要学习Anko中对自定义View的扩展，以FaceBook的图片加载框架fresco中的SimpleDraweeView为例。 必要条件支持kotlin及kotlin扩展引入anko及anko扩展（个人建议引入github上面anko项目下所有库）开始创建一个名为views.kt的文件写入以下代码123inline fun ViewManager.simpleDraweeView(theme">
+<meta property="og:description" content="categories: Androidtags: Anko本篇简要学习Anko中对自定义View的扩展，以FaceBook的图片加载框架fresco中的SimpleDraweeView为例。 必要条件支持kotlin及kotlin扩展引入anko及anko扩展（个人建议引入github上面anko项目下所有库）开始创建一个名为views.kt的文件写入以下代码123inline fun ViewM">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-21T15:22:24.121Z">
+<meta property="og:updated_time" content="2018-01-21T16:46:19.682Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Anko的使用（一）">
-<meta name="twitter:description" content="本篇简要学习Anko中对自定义View的扩展，以FaceBook的图片加载框架fresco中的SimpleDraweeView为例。 必要条件支持kotlin及kotlin扩展引入anko及anko扩展（个人建议引入github上面anko项目下所有库）开始创建一个名为views.kt的文件写入以下代码123inline fun ViewManager.simpleDraweeView(theme">
+<meta name="twitter:description" content="categories: Androidtags: Anko本篇简要学习Anko中对自定义View的扩展，以FaceBook的图片加载框架fresco中的SimpleDraweeView为例。 必要条件支持kotlin及kotlin扩展引入anko及anko扩展（个人建议引入github上面anko项目下所有库）开始创建一个名为views.kt的文件写入以下代码123inline fun ViewM">
 
 
 
@@ -133,7 +133,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/01/21/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/01/22/hello-world/"/>
 
 
 
@@ -278,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/21/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/22/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Kumi">
@@ -307,8 +307,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-21T23:22:24+08:00">
-                2018-01-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-22T00:46:19+08:00">
+                2018-01-22
               </time>
             
 
@@ -345,7 +345,7 @@
       
 
       
-        <p>本篇简要学习Anko中对自定义View的扩展，以FaceBook的图片加载框架fresco中的SimpleDraweeView为例。</p>
+        <h2 id="categories-Android"><a href="#categories-Android" class="headerlink" title="categories: Android"></a>categories: Android</h2><h2 id="tags-Anko"><a href="#tags-Anko" class="headerlink" title="tags: Anko"></a>tags: Anko</h2><p>本篇简要学习Anko中对自定义View的扩展，以FaceBook的图片加载框架fresco中的SimpleDraweeView为例。</p>
 <h2 id="必要条件"><a href="#必要条件" class="headerlink" title="必要条件"></a>必要条件</h2><h5 id="支持kotlin及kotlin扩展"><a href="#支持kotlin及kotlin扩展" class="headerlink" title="支持kotlin及kotlin扩展"></a>支持kotlin及kotlin扩展</h5><h5 id="引入anko及anko扩展（个人建议引入github上面anko项目下所有库）"><a href="#引入anko及anko扩展（个人建议引入github上面anko项目下所有库）" class="headerlink" title="引入anko及anko扩展（个人建议引入github上面anko项目下所有库）"></a>引入anko及anko扩展（个人建议引入github上面anko项目下所有库）</h5><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h4 id="创建一个名为views-kt的文件"><a href="#创建一个名为views-kt的文件" class="headerlink" title="创建一个名为views.kt的文件"></a>创建一个名为views.kt的文件</h4><h4 id="写入以下代码"><a href="#写入以下代码" class="headerlink" title="写入以下代码"></a>写入以下代码</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">inline</span> <span class="function"><span class="keyword">fun</span> ViewManager.<span class="title">simpleDraweeView</span><span class="params">(theme: <span class="type">Int</span> = <span class="number">0</span>)</span></span> = simpleDraweeView(theme) &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">inline</span> <span class="function"><span class="keyword">fun</span> ViewManager.<span class="title">simpleDraweeView</span><span class="params">(theme: <span class="type">Int</span> = <span class="number">0</span>, init: <span class="type">SimpleDraweeView</span>.()</span></span> -&gt; <span class="built_in">Unit</span>) = ankoView(&#123; SimpleDraweeView(it) &#125;, theme, init)</span><br></pre></td></tr></table></figure>
 <p>其中<strong>SimpleDraweeView</strong>代表自定义view的名称，<strong>simpleDraweeView</strong>则代表该自定义view在Anko中使用的名称，建议使用自定义View类名的首字母改为小写命名，与官方命名规范一致。</p>
 <h4 id="使用（在AnkoComponent的实现类中）"><a href="#使用（在AnkoComponent的实现类中）" class="headerlink" title="使用（在AnkoComponent的实现类中）"></a>使用（在AnkoComponent的实现类中）</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MainAnkoUI</span>&lt;<span class="type">in MainActivity</span>&gt; : <span class="type">AnkoComponent</span>&lt;<span class="type">MainActivity</span>&gt; </span>&#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">createView</span><span class="params">(ui: <span class="type">AnkoContext</span>&lt;<span class="type">MainActivity</span>&gt;)</span></span> = ui.apply&#123;</span><br><span class="line">        ui.constraintLayout() &#123;</span><br><span class="line">            simpleDraweeView &#123;</span><br><span class="line">                hierarchy=GenericDraweeHierarchyBuilder(resources)</span><br><span class="line">                        .setPlaceholderImage(R.mipmap.ic_launcher)</span><br><span class="line">                        .build()          </span><br><span class="line">            &#125;.lparams(<span class="number">200</span>, <span class="number">200</span>)</span><br><span class="line">                    .setImageURI(<span class="string">"Http://******"</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;.view</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -450,7 +450,7 @@
                alt="Kumi" />
           <p class="site-author-name" itemprop="name">Kumi</p>
            
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">我不做人啦，jojo！</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -497,7 +497,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#必要条件"><span class="nav-number">1.</span> <span class="nav-text">必要条件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#支持kotlin及kotlin扩展"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">支持kotlin及kotlin扩展</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#引入anko及anko扩展（个人建议引入github上面anko项目下所有库）"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">引入anko及anko扩展（个人建议引入github上面anko项目下所有库）</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">2.</span> <span class="nav-text">开始</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建一个名为views-kt的文件"><span class="nav-number">2.0.1.</span> <span class="nav-text">创建一个名为views.kt的文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#写入以下代码"><span class="nav-number">2.0.2.</span> <span class="nav-text">写入以下代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用（在AnkoComponent的实现类中）"><span class="nav-number">2.0.3.</span> <span class="nav-text">使用（在AnkoComponent的实现类中）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结语"><span class="nav-number">2.1.</span> <span class="nav-text">结语</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#第一篇就这样吧，写短一点。"><span class="nav-number">2.1.0.1.</span> <span class="nav-text">第一篇就这样吧，写短一点。</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#categories-Android"><span class="nav-number">1.</span> <span class="nav-text">categories: Android</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tags-Anko"><span class="nav-number">2.</span> <span class="nav-text">tags: Anko</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#必要条件"><span class="nav-number">3.</span> <span class="nav-text">必要条件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#支持kotlin及kotlin扩展"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">支持kotlin及kotlin扩展</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#引入anko及anko扩展（个人建议引入github上面anko项目下所有库）"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">引入anko及anko扩展（个人建议引入github上面anko项目下所有库）</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">4.</span> <span class="nav-text">开始</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建一个名为views-kt的文件"><span class="nav-number">4.0.1.</span> <span class="nav-text">创建一个名为views.kt的文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#写入以下代码"><span class="nav-number">4.0.2.</span> <span class="nav-text">写入以下代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用（在AnkoComponent的实现类中）"><span class="nav-number">4.0.3.</span> <span class="nav-text">使用（在AnkoComponent的实现类中）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结语"><span class="nav-number">4.1.</span> <span class="nav-text">结语</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#第一篇就这样吧，写短一点。"><span class="nav-number">4.1.0.1.</span> <span class="nav-text">第一篇就这样吧，写短一点。</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
